@@ -116,14 +116,18 @@ p.largetext, span.largetext, .largetext>p, .largetext>span{
   margin: 0.986rem 0;
 }
 
-p.simpletext, span.simpletext, .simpletext>p, .simpletext>span{
+p.simpletext, span.simpletext, .simpletext>p, .simpletext>span, .simpletext>li{
   font-size: 1.8rem;
   margin: 0.739rem 0;
 }
 
-p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
+p.smalltext, span.smalltext, .smalltext>p, .smalltext>span, .smalltext>li{
   font-size: 1.35rem;
   margin: 0.554rem 0;
+}
+li{
+  font-size: 1.6rem;
+  margin: 0.657rem 0;
 }
 
 .largeminheight{
@@ -141,6 +145,16 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
   margin: 0 auto;
 }
 
+.footerwrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1128px;
+}
+
 .flexcentre{
   display: flex;
   flex-direction: column;
@@ -153,7 +167,7 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
   justify-self: center;
   width: 100%;
   z-index: 1;
-  padding: 2rem 0;
+  padding: 2rem 0 8rem 0;
 }
 
 .lightgreysection{
@@ -167,11 +181,11 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
   background: #4B007D;
 }
 .sectionwrapper.purplesection, .sectionwrapper.darkpinksection{
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 
 @media only screen and (max-device-width : 480px) {
-  .central {
+  .central, .footerwrapper {
     width: calc(100% - 2rem);
     padding: 0 1rem 0 1rem;
   }
@@ -187,7 +201,9 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
   .smallsimplesecondaryheadline{
     font-size: 1.772rem;
   }
-
+  li{
+    font-size: 1.2rem;
+  }
   p.herotext, span.herotext, .herotext>p, .herotext>span{
     font-size: 2.4rem;
   }
@@ -196,11 +212,11 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
     font-size: 1.8rem;
   }
   
-  p.simpletext, span.simpletext, .simpletext>p, .simpletext>span{
+  p.simpletext, span.simpletext, .simpletext>p, .simpletext>span, .simpletext>li{
     font-size: 1.35rem;
   }
   
-  p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
+  p.smalltext, span.smalltext, .smalltext>p, .smalltext>span, .smalltext>li{
     font-size: 1.20rem;
   }
 }
@@ -218,7 +234,9 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
   .smallsimplesecondaryheadline{
     font-size: 2.067rem;
   }
-
+  li{
+    font-size: 1.4rem;
+  }
   p.herotext, span.herotext, .herotext>p, .herotext>span{
     font-size: 2.8rem;
   }
@@ -227,39 +245,48 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
     font-size: 2.1rem;
   }
   
-  p.simpletext, span.simpletext, .simpletext>p, .simpletext>span{
+  p.simpletext, span.simpletext, .simpletext>p, .simpletext>span, .simpletext>li{
     font-size: 1.575rem;
   }
   
-  p.smalltext, span.smalltext, .smalltext>p, .smalltext>span{
+  p.smalltext, span.smalltext, .smalltext>p, .smalltext>span, .smalltext>li{
     font-size: 1.20rem;
   }
 }
 
+.flink{
+  cursor: pointer;
+}
+
+.flink::after{
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: 1px solid;
+  border-bottom-color: inherit;
+  transition: width .2s ease-out;
+}
+
+.flink:hover:after{
+  width: 100%;
+}
+
 @media only screen and (min-device-width : 481px) and (max-device-width : 910px) {
-   .central {
+   .central, .footerwrapper {
        width: calc(100% - 4rem);
        padding: 0 2rem 0 2rem;
    }
 }
 
 @media only screen and (min-device-width : 911px) and (max-device-width : 1167px) {
-   .central {
+   .central, .footerwrapper {
        width: calc(100% - 4rem);
        padding: 0 2rem 0 2rem;
    }
 }
 
 @media only screen and  (min-device-width : 1168px) {
-   .central  {
+   .central, .footerwrapper  {
        padding: 0;
    }
 }
-
-
-
-
-
-
-
-

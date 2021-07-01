@@ -2,14 +2,7 @@
    display: flex;
    flex-direction: column;
    height: 100%;
-}
-
-.whitebackground{
-    background-color: #FFFFFF;
-}
-
-.lightgrey{
-    background-color: #FEFEFE;
+   color: #0F0F0F;
 }
 
 .firstsection, .secondsection, .fourthsection{

@@ -5,10 +5,38 @@
     background-color: #004a7c;
     color: #FFFFFF;
 }
-.footerwrapper{
+
+.fmain{
     display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1128px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.col1 > ul, .col2 > ul, .col3 > ul{
+    list-style:none;
+    padding: 0;
+}
+.col1,.col2,.col3{
+    flex: 0 1 auto;
+}
+.col1, .col2{
+    font-weight: 500;
+}
+.col3 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+.fbottom{
+    margin: 0;
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 600px) {
+    .col3 {
+        font-size: 2.715rem;
+    }
 }
