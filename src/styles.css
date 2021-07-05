@@ -125,6 +125,12 @@ p.smalltext, span.smalltext, .smalltext>p, .smalltext>span, .smalltext>li{
   font-size: 1.35rem;
   margin: 0.554rem 0;
 }
+.herotext > .special, .largetext > .special, .simpletext > .special, .smalltext > .special,
+.heroheadline > .special, .simpleheadline > .special, .simplesecondaryheadline > .special, .smallsimplesecondaryheadline > .special{
+  margin: 0;
+}
+
+
 li{
   font-size: 1.6rem;
   margin: 0.657rem 0;
