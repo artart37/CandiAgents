@@ -11,6 +11,7 @@ import { MagicchipsComponent } from './shared/components/magicchips/magicchips.c
 import { ButtonComponent } from './shared/components/button/button.component';
 import { ObjectfilterPipe } from './shared/components/magicchips/pipes/objectfilter.pipe';
 import { HowitworksComponent } from './shared/components/howitworks/howitworks.component';
+import { CheckleftrightvpDirective } from './shared/directives/checkleftrightvp.directive';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HowitworksComponent } from './shared/components/howitworks/howitworks.c
     MagicchipsComponent,
     ButtonComponent,
     ObjectfilterPipe,
-    HowitworksComponent
+    HowitworksComponent,
+    CheckleftrightvpDirective
   ],
   
   imports: [

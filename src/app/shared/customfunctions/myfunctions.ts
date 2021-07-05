@@ -29,5 +29,5 @@ export function smoothScroll(target:HTMLElement, duration:number){
         return -c * (t*t*t*t - 1) + b;
     };
     //Will run the myanimation function at 60fps
-    requestAnimationFrame(myanimation);
+    requestAnimationFrame(myanimation);     
 }

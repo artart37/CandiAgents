@@ -1,6 +1,6 @@
-<div class="main">
+<div class="main" [(isinviewport)]="animearr">
     <div class="sectionwrapper">
-        <section class="firstsection">
+        <section class="firstsection" [@rightleft] = "animearr[0]?'inview':'none'">
             <article class="leftbox herotext">
                     <h1 class="heroheadline">Help each other find a job.</h1>
                     <p>Find real people who will help you land a job. Earn by helping others find a job.</p>
@@ -12,7 +12,7 @@
         </section>
     </div>
     <div class="sectionwrapper">
-        <section class="secondsection">
+        <section class="secondsection" [@rightleft] = "animearr[1]?'inview':'none'">
             <article class="leftbox">
                 <section class="callforactionwrapper">
                     <h2 class="callforactionheadline">Find your dream job</h2>
@@ -32,9 +32,8 @@
             <app-button [buttonstyle]="'solid tall round'">Start</app-button>
         </div>
     </div>
-
     <div class="sectionwrapper flexcentre">
-        <div class="fourthsection">
+        <div class="fourthsection" [@rightleft] = "animearr[2]?'inview':'none'">
             <article class="leftbox">
                 <h3 class="simplesecondaryheadline">What makes Hiring Assistants special</h3>
                 <p class="largetext">Hiring assistants <span class="special">work for jobseekers</span> and <span class="special">not</span> for prospective employers.</p>
@@ -56,6 +55,3 @@
         </div>
     </div>
 </div>
-
-
-

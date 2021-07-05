@@ -69,7 +69,7 @@ html, body{
 /* Page Style */
 .pagecontainer{
   display: grid;
-  grid-template-rows: 60.5px calc(100% - 226px) 165.5px;
+  grid-template-rows: 60.5px calc(100% - 261px) 200.5px;
   margin: 0;
 }
 .special{
@@ -252,6 +252,12 @@ li{
   p.smalltext, span.smalltext, .smalltext>p, .smalltext>span, .smalltext>li{
     font-size: 1.20rem;
   }
+}
+
+.anostyle{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .flink{

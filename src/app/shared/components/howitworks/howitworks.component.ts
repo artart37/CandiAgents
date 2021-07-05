@@ -21,9 +21,9 @@ export class HowitworksComponent implements OnInit {
     let viewportOffset = this.howitworks.nativeElement.getBoundingClientRect()
     let toppos = viewportOffset.top;
     let wndheight = window.innerHeight || e.target.documentElement.clientHeight;
-    let howitworksheight = this.howitworks.nativeElement.getBoundingClientRect().height
+    let howitworksheight = viewportOffset.height
     //When the howitworks section enters the viewport
-    if (wndheight - toppos >= (howitworksheight)) {
+    if ((wndheight - toppos) >= howitworksheight) {
     //If the left card is visible and the animation hasn't started yet
       if(this.toggler === true && (this.animestates == "none" || this.animestates == "void")){
     //Start the animation

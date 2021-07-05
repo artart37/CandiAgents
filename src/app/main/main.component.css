@@ -14,6 +14,8 @@
     max-width: 1128px;
     height: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .chipscontainerwrapper {
     display: flex;
@@ -34,7 +36,7 @@
 
 .chipscontainerwrapper>app-button {
     align-self: flex-end;
-    margin: 0 0.5rem 0 0;
+    margin: 1rem 0.5rem 0 0;
 }
 
 .fourthsection + .central>app-button{
@@ -47,28 +49,24 @@
     background-color: inherit;
 }
 
-.rightbox{
+.rightbox, .leftbox{
     width: 50%;
     height: 100%;
     flex: 1;
     display: flex;
+    position: relative;
+    transform: translateX(0);
     flex-direction: column;
     align-items: baseline;
     align-content: baseline;
-    justify-content: center;
     background-color: inherit;
 }
 
+.rightbox{
+    justify-content: center;
+}
 .leftbox{
-    width: 50%;
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    align-content: baseline;
     justify-content: flex-start;
-    background-color: inherit;
 }
 
 .callforactionwrapper{

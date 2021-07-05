@@ -8,7 +8,7 @@
 
 .fmain{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
@@ -32,9 +32,28 @@
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
 }
+
 .fbottom{
     margin: 0;
+    border-top: 1px solid #002A46;
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
 }
+
+@media only screen and (max-device-width : 482px) {
+    .col1, .col2 {
+        width: 50%;
+    }
+    .col3 {
+        order: -1;
+        width: 100%;
+    }
+    .fbottom{
+       text-align: left;
+    }
+}
+
 @media only screen and (min-device-width : 481px) and (max-device-width : 600px) {
     .col3 {
         font-size: 2.715rem;
